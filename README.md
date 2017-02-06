@@ -3,13 +3,25 @@ About lazy
 
 Home: https://github.com/stefanholek/lazy
 
-Package license: BSD
+Package license: BSD 2-Clause
 
 Feedstock license: BSD 3-Clause
 
 Summary: Lazy attributes for Python objects
 
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/lazy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/lazy-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/lazy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/lazy-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/lazy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/lazy-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lazy/badges/version.svg)](https://anaconda.org/conda-forge/lazy)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lazy/badges/downloads.svg)](https://anaconda.org/conda-forge/lazy)
 
 Installing lazy
 ===============
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `lazy` available on your platform 
 ```
 conda search lazy --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/lazy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/lazy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/lazy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/lazy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/lazy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/lazy-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lazy/badges/version.svg)](https://anaconda.org/conda-forge/lazy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lazy/badges/downloads.svg)](https://anaconda.org/conda-forge/lazy)
 
 
 Updating lazy-feedstock
