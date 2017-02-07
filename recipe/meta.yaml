@@ -1,8 +1,8 @@
 {%set name = "lazy" %}
-{%set version = "1.2" %}
+{%set version = "1.3" %}
 {%set compress_type = "zip" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "127ea610418057b953f0d102bed83f2c367be13b59f8d0ddf3b8a86c7d31b970" %}
+{%set hash_val = "c80a77bf7106ba7b27378759900cfefef38271088dc63b014bcfe610c8e68e3d" %}
 {%set build_num = "0" %}
 
 package:
@@ -33,8 +33,9 @@ test:
 
 about:
   home: https://github.com/stefanholek/lazy
-  license: BSD
+  license: BSD 2-Clause
   license_family: BSD
+  license_file: LICENSE
   summary: 'Lazy attributes for Python objects'
   dev_url: https://github.com/stefanholek/lazy
   doc_url: https://pythonhosted.org/lazy/
