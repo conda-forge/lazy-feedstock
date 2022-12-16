@@ -1,44 +1,41 @@
 {% set name = "lazy" %}
-{% set version = "1.4" %}
-{% set compress_type = "zip" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "2c6d27a5ab130fb85435320651a47403adcb37ecbcc501b0c6606391f65f5b43" %}
+{% set version = "1.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lazy-{{ version }}.tar.gz
+  sha256: cb3d8612aa895a48afe8f08860573ba8ef5ee4fdbe1b3cd606c5f50a16152186
 
 build:
-  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python
+    - python >=3.3
     - pip
 
   run:
-    - python
-
+    - python >=3.3
 test:
   imports:
     - lazy
-    - lazy.tests
-
+  commands:
+    - pip check
+  requires:
+    - pip
 about:
   home: https://github.com/stefanholek/lazy
-  license: BSD 2-Clause
-  license_family: BSD
-  license_file: LICENSE
-  summary: 'Lazy attributes for Python objects'
-  dev_url: https://github.com/stefanholek/lazy
+  summary: Lazy attributes for Python objects
   doc_url: https://pythonhosted.org/lazy/
+  license: BSD-2-Clause
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - thewchan
