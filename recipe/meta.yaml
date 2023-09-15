@@ -1,5 +1,5 @@
 {% set name = "lazy" %}
-{% set version = "1.5" %}
+{% set version = "1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lazy-{{ version }}.tar.gz
-  sha256: cb3d8612aa895a48afe8f08860573ba8ef5ee4fdbe1b3cd606c5f50a16152186
+  sha256: 7127324ec709e8324f08cb4611c1abe01776bda53bb9ce68dc5dfa46ca0ed3e9
 
 build:
   noarch: python
