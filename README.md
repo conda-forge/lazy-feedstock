@@ -1,11 +1,11 @@
-About lazy
-==========
+About lazy-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lazy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/stefanholek/lazy
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lazy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Lazy attributes for Python objects
 
