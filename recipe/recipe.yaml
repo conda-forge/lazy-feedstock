@@ -1,0 +1,47 @@
+schema_version: 1
+
+context:
+  name: lazy
+  version: "2.0"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/lazy-${{ version }}.tar.gz
+  sha256: f92ec0d32dd6bd115ddec4e3323473ebc0b682ad58c6aca78ebfd9e6d1aa5777
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - lazy
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Lazy attributes for Python objects
+  license: BSD-2-Clause
+  license_file: LICENSE
+  homepage: https://github.com/stefanholek/lazy
+  documentation: https://pythonhosted.org/lazy/
+
+extra:
+  recipe-maintainers:
+    - pmlandwehr
+    - thewchan
